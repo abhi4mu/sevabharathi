@@ -1,2 +1,2 @@
 a = 2
-print("hello")
+print("hello friends")
