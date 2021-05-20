@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Seva Bharathi</title>
   </head>
   <body>
     <header>
@@ -16,22 +16,49 @@
             <div class="container">
                 <div class="row layout-info">
                     <a href="#" class="navbar-brand">
-                        <img src="" alt="Not Loaded" class="layout-logo">
+                        <img src="../static/images/logo.jpg" alt="Not Loaded" class="layout-logo" width="90" height="100">
+                        <img src="../static/images/logotext.PNG" alt="NotLoaded" class="layout-logotext" width="220" height="100">
                     </a>
-                    <p class="text-light layout-text">Sevabharthi<br>
-                        Vijayawada
-                    </p>
                 </div>
-                <p class="text-light layout-motto">
-                    Please Save
+                <p class="layout-motto">
+                    Kindling Hope & Happiness Around
                 </p> 
             </div>
         </div>
     </header>
+    <nav id="navbar">
+        <ul class="menu-list">
+            <li class="logo"><a href="#">
+        <img src="../static/images/sevalogovijrem.png" alt="Not Loaded" class="layout-logo">
+        </a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
 
 
     {% block body %}
     {% endblock %}
+    <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+    <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+    <script>
+        const nav = document.querySelector("#navbar");
+    const NavTop = nav.offsetTop;
+
+    function fixnavbar(){
+      if(window.scrollY >= NavTop){
+        document.body.style.paddingTop = nav.offsetHeight + "px";
+        document.body.classList.add("fixed-nav");
+      }else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove("fixed-nav");
+      }
+    }
+    window.addEventListener("scroll", fixnavbar);
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
