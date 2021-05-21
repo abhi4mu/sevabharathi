@@ -7,60 +7,108 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Scripts -->
     <title>Seva Bharathi</title>
   </head>
   <body>
     <header>
-        <div class="navbar navbar-expand-lg layout-topbar">
+        <div class="layout-topbar">
             <div class="container">
                 <div class="row layout-info">
-                    <a href="#" class="navbar-brand">
-                        <img src="../static/images/logo.jpg" alt="Not Loaded" class="layout-logo" width="90" height="100">
-                        <img src="../static/images/logotext.PNG" alt="NotLoaded" class="layout-logotext" width="220" height="100">
-                    </a>
-                </div>
-                <p class="layout-motto">
-                    Kindling Hope & Happiness Around
-                </p> 
+                    <div class="col">
+                        <a href="#" class="navbar-brand">
+                            <img src="../static/images/logo.jpg" alt="Not Loaded" class="layout-logo" width="90" height="100">
+                            <img src="../static/images/logotext.PNG" alt="NotLoaded" class="layout-logotext" width="220" height="100">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <p class="layout-motto">
+                            Kindling Hope & Happiness Around
+                        </p>
+                    </div>
+                </div> 
             </div>
         </div>
-    </header>
-    <nav id="navbar">
-        <ul class="menu-list">
-            <li class="logo"><a href="#">
-        <img src="../static/images/sevalogovijrem.png" alt="Not Loaded" class="layout-logo">
-        </a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+        
+
+        <nav id="navbar">
+            <div id="logo">Your Logo here</div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-1" class="toggle">WordPress +</label>
+                        <a href="#">WordPress</a>
+                        <input type="checkbox" id="drop-1"/>
+                        <ul>
+                            <li><a href="#">Themes and stuff</a></li>
+                            <li><a href="#">Plugins</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>  
+                    </li>
+                    <li>
+    
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-2" class="toggle">Web Design +</label>
+                    <a href="#">Web Design</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li>
+                           
+                        <!-- Second Tier Drop Down -->        
+                        <label for="drop-3" class="toggle">Tutorials +</label>
+                        <a href="#">Tutorials</a>         
+                        <input type="checkbox" id="drop-3"/>
+    
+                        <ul>
+                            <li><a href="#">HTML/CSS</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+    
+    
 
 
     {% block body %}
     {% endblock %}
     <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
     <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
-    <script>
-        const nav = document.querySelector("#navbar");
-    const NavTop = nav.offsetTop;
-
-    function fixnavbar(){
-      if(window.scrollY >= NavTop){
-        document.body.style.paddingTop = nav.offsetHeight + "px";
-        document.body.classList.add("fixed-nav");
-      }else {
-        document.body.style.paddingTop = 0;
-        document.body.classList.remove("fixed-nav");
-      }
-    }
-    window.addEventListener("scroll", fixnavbar);
-    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
