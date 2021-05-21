@@ -188,3 +188,64 @@ li > a:only-child:after { content: ''; }
 	padding-top: 60px;
 }  
 /***Header Second bar ends***/
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+ .footer{
+ 	position:relative;
+    background-color:#303036;
+    display: block;
+}
+.container{
+	color: white;
+	padding: 20px;
+}
+.column-1 .para{
+   width: 330px;
+   font-size: 15px;
+}
+.column-3-con{
+   width: 340px;
+   font-size: 15px;
+}
+.column .column-1{
+	padding: 25px;
+}
+.column .column-2{
+	padding: 25px;
+}
+.column .column-3{
+	padding: 25px;
+}
+.container .logo-copy{
+	padding: 10px;
+}
+.socials{
+  text-align:center;
+  font-size:30px;
+  color: #ddd;
+  border-bottom: 1px solid white;
+  border-top:1px solid white;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.site-navigation {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-navigation-item {
+  color: white;
+  font-size: 15px;
+  margin-left: .1rem;
+  padding:5px;
+}
+.site-navigation-item .hover{
+	color: #ddd;
+}
+/*responsive ness*/
