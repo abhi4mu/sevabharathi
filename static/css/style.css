@@ -11,7 +11,7 @@
 	padding-top: 40px;
 }
 .layout-topbar{
-    background-color: #e4c580;
+    background-color: #f8ede3;
 }
 /***Header First bar ends***/
 /***Header Second bar starts***/
@@ -31,7 +31,7 @@ p {
 nav { 
 	margin:0;
 	padding: 0;
-	background-color: #f4e4c1;
+	background-color: #bdd2b6;
 }
 #logo {
 	display: block;
@@ -55,7 +55,7 @@ nav ul {
 nav ul li {
 	margin: 0px;
 	float:left;
-	background-color: #f4e4c1;
+	background-color: #bdd2b6;
 	}
 nav a#headlink {
 	display:block;
@@ -111,7 +111,7 @@ li > a:only-child:after { content: ''; }
 	}
 	.toggle {
 		display: block;
-		background-color: #f4e4c1;
+		background-color: #bdd2b6;
 		padding:14px 20px;	
 		color:#000;
 		font-size:17px;
