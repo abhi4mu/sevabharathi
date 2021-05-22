@@ -21,14 +21,11 @@
 	margin: 0 auto;
 	max-width: 890px;
 }
-p {
-	text-align: center;
-}
 .toggle,
 [id^=drop] {
 	display: none;
 }
-nav { 
+.layout-navbar { 
 	margin:0;
 	padding: 0;
 	background-color: #bdd2b6;
@@ -38,55 +35,55 @@ nav {
 	padding: 0 30px;
 	float: left;
 	font-size:20px;
-	line-height: 60px;
+	line-height: 54px;
 }
-nav:after {
+.layout-navbar:after {
 	content:"";
 	display:table;
 	clear:both;
 }
-nav ul {
+.layout-navbar ul {
 	float: right;
 	padding:0;
 	margin:0;
 	list-style: none;
 	position: relative;
 	}
-nav ul li {
+.layout-navbar ul li {
 	margin: 0px;
 	float:left;
 	background-color: #bdd2b6;
 	}
-nav a#headlink {
+.layout-navbar a#headlink {
 	display:block;
 	padding:14px 20px;	
 	color:#000;
 	font-size:17px;
 	text-decoration:none;
 }
-nav a#headlinkdrop {
+.layout-navbar a#headlinkdrop {
 	display:block;
 	padding:14px 20px;	
 	color:#000;
 	font-size:17px;
 	text-decoration:none;
 }
-nav ul li ul li:hover { background: #000000; }
-nav a#headlink:hover { 
+.layout-navbar ul li ul li:hover { background: #000000; }
+.layout-navbar a#headlink:hover { 
 	background-color: #fff; 
 }
-nav a#headlinkdrop:hover { 
+.layout-navbar a#headlinkdrop:hover { 
 	background-color: #fff; 
 }
-nav ul ul {
+.layout-navbar ul ul {
 	display: none;
 	position: absolute; 
-	top: 60px; 
+	top: 54px; 
 }
-nav ul li:hover > ul {
+.layout-navbar ul li:hover > ul {
 	display:inherit;
 }
-nav ul ul li {
+.layout-navbar ul ul li {
 	width:170px;
 	float:none;
 	display:list-item;
@@ -102,7 +99,7 @@ li > a:only-child:after { content: ''; }
 		text-align: center;
 		float: none;
 	}
-	nav {
+	.layout-navbar {
 		margin: 0;
 	}
 	.toggle + a,
@@ -124,54 +121,54 @@ li > a:only-child:after { content: ''; }
 	[id^=drop]:checked + ul {
 		display: block;
 	}
-	nav ul li {
+	.layout-navbar ul li {
 		display: block;
 		width: 100%;
 		}
-	nav ul ul .toggle,
-	nav ul ul a {
+	.layout-navbar ul ul .toggle,
+	.layout-navbar ul ul a {
 		padding: 0 40px;
 	}
-	nav ul ul ul a {
+	.layout-navbar ul ul ul a {
 		padding: 0 80px;
 	}
-	nav a:hover,
- 	nav ul ul ul a {
+	.layout-navbar a:hover,
+ 	.layout-navbar ul ul ul a {
 		background-color: #000;
 	}
-	nav ul li ul li .toggle,
-	nav ul ul a,
-  nav ul ul ul a{
+	.layout-navbar ul li ul li .toggle,
+	.layout-navbar ul ul a,
+  .layout-navbar ul ul ul a{
 		padding:14px 20px;	
 		color:#000;
 		font-size:17px; 
 	}
-	nav ul li ul li .toggle,
-	nav ul ul a {
+	.layout-navbar ul li ul li .toggle,
+	.layout-navbar ul ul a {
 		background-color: #798777; 
 	}
-	nav ul ul {
+	.layout-navbar ul ul {
 		float: none;
 		position:static;
 		color: #ffffff;
 	}
-	nav ul ul li:hover > ul,
-	nav ul li:hover > ul {
+	.layout-navbar ul ul li:hover > ul,
+	.layout-navbar ul li:hover > ul {
 		display: none;
 	}
-	nav ul ul li {
+	.layout-navbar ul ul li {
 		display: block;
 		width: 100%;
 	}
-	nav ul ul ul li {
+	.layout-navbar ul ul ul li {
 		position: static;
 	}
-	nav ul li a#headlinkdrop{
+	.layout-navbar ul li a#headlinkdrop{
 		display: none;
 	}
 }
 @media all and (max-width : 330px) {
-	nav ul li {
+	.layout-navbar ul li {
 		display:block;
 		width: 94%;
 	}
