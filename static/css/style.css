@@ -47,24 +47,6 @@
   height: 50em;
 }
 
-
-
-/***Header First bar starts***/
-.layout-motto{
-	font-family: Gill Sans, Verdana;
-	font-size: 15px;
-	line-height: 14px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: bold;
-	color: black;
-	text-align: center;
-	padding-top: 40px;
-}
-.layout-topbar{
-    background-color: #f8ede3;
-}
-/***Header First bar ends***/
 /***Header Second bar starts***/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
