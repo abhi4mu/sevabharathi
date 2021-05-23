@@ -28,7 +28,7 @@
 .layout-navbar { 
 	margin:0;
 	padding: 0;
-	background-color: #bdd2b6;
+	background-color: orange;
 }
 #logo {
 	display: block;
@@ -52,7 +52,7 @@
 .layout-navbar ul li {
 	margin: 0px;
 	float:left;
-	background-color: #bdd2b6;
+	background-color: orange;
 	}
 .layout-navbar a#headlink {
 	display:block;
