@@ -19,7 +19,7 @@ ul.dropdown-menu.show {
   min-width: 200px;
   width: 30%; 
   margin-left: 1%; 
-  margin-right: 1%;
+  /* margin-right: 1%; */
 }
 
 .home-inner-div
@@ -65,18 +65,7 @@ ul.dropdown-menu.show {
 .layout-nav-link:hover{
   color: white;
 }
-/***Home Ends***/
-.content {
-  padding: 16px;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
+
 /***Home Slider Starts**
 .carousel-item img{
 	opacity: 0.7;
