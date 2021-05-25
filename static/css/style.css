@@ -16,6 +16,7 @@ ul.dropdown-menu.show {
 }
 
 .home-col{
+  min-width: 200px;
   width: 30%; 
   margin-left: 1%; 
   margin-right: 1%;
