@@ -5,7 +5,6 @@ app = Flask(__name__)
 @app.route('/home')
 def home():
     return render_template('home.html')
-
 @app.route('/team')
 def team():
     return render_template('team.html')
