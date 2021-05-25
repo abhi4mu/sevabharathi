@@ -65,6 +65,17 @@ ul.dropdown-menu.show {
   color: white;
 }
 /***Home Ends***/
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
 /***Home Slider Starts**
 .carousel-item img{
 	opacity: 0.7;
