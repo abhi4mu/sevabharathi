@@ -8,5 +8,8 @@ def home():
 @app.route('/team')
 def team():
     return render_template('team.html')
+@app.route('/ourparners')
+def ourpartners():
+    return render_template('ourpartners.html')
 if __name__=='__main__':
     app.run(debug=True)
