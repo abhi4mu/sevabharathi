@@ -7,7 +7,7 @@ def covid19():
     return render_template('covid19.html')
 
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('home.html')
 @app.route('/team')
