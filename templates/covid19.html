@@ -1,1 +1,30 @@
 {% extends 'layout.html' %}
+
+{% block body %}
+
+<style>
+    .covid19-card{
+        width: 100%;
+        padding-top: 31%;
+        background-size: cover;
+    }
+</style>
+<div class="container-fluid">
+<div class="row">
+    <div class="col col-lg-6 col-md-12" style="padding:0">
+        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N1.jpg')}});"></div></div>
+        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N2.jpg')}});"></div></div>
+        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N3.jpg')}});"></div></div>
+        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N4.jpg')}});"></div></div>
+        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N5.jpg')}});"></div></div>
+    </div>
+    <div class="col col-lg-6 col-md-12" style="padding:0 0">
+        <p style="margin-left:1%; margin-top:1%">
+            About Covid-19 here
+        </p>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
