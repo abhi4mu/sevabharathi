@@ -2,6 +2,11 @@ from flask import Flask,render_template,url_for
 
 app = Flask(__name__)
 
+@app.route('/covid19')
+def covid19():
+    return render_template('covid19.html')
+
+
 @app.route('/home')
 def home():
     return render_template('home.html')
