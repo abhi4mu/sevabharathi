@@ -36,18 +36,19 @@
                           Activites
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                          <li><a class="dropdown-item" href="#">Health</a></li>
-                          <li><a class="dropdown-item" href="#">Education</a></li>
-                          <li><a class="dropdown-item" href="#">Samskara Kendra</a></li>
-                          <li><a class="dropdown-item" href="#">Livelyhood</a></li>
-                          <li><a class="dropdown-item" href="#">Vanavasi Vidhyarthi Vikasa Yojana</a></li>
-                          <li><a class="dropdown-item" href="#">Tribal Welfare</a></li>
-                          <li><a class="dropdown-item" href="#">Social</a></li>
-                          <li><a class="dropdown-item" href="#">Relief</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('health')}}">Health</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('education')}}">Education</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('samskara')}}">Samskara Kendra</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('livelyhood')}}">Livelyhood</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('vanavasi')}}">Vanavasi Vidhyarthi Vikasa Yojana</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('tribal')}}">Tribal Welfare</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('social')}}">Social</a></li>
+                          <li><a class="dropdown-item" href="{{url_for('relief')}}">Relief</a></li>
                         </ul>
                       </li>
                       <li class="nav-item layout-nav-link"><a class="nav-link " href="#">Become a Volunteer</a></li>
                       <li class="nav-item layout-nav-link"><a class="nav-link " href="#">Donate Us</a></li>
+                      <li class="nav-item layout-nav-link"><a class="nav-link " href="#contact-us">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
@@ -75,13 +76,7 @@
                                 <a href="{{url_for('home')}}" class="layout-footerlink" style="text-decoration: none;">Home</a>
                             </li>
                             <li style="padding-bottom:8px;">
-                                <a href="#!" class="layout-footerlink" style="text-decoration: none;">About Us</a>
-                            </li>
-                            <li style="padding-bottom:8px;">
-                                <a href="#!" class="layout-footerlink" style="text-decoration: none;">Our Projects</a>
-                            </li>
-                            <li style="padding-bottom:8px;">
-                                <a href="#test" class="layout-footerlink" style="text-decoration: none;">Conatct Us</a>
+                                <a href="{{url_for('team')}}" class="layout-footerlink" style="text-decoration: none;">About Us</a>
                             </li>
                         </ul>
                     </div>
@@ -111,7 +106,7 @@
                     </div>
                     <hr class="clearfix w-100 d-md-none layout-footline">
                     <div class="col-md-4 mx-auto" id="contact-us">
-                        <h5 id="test" class="font-weight-bold layout-foottext text-uppercase mt-3 mb-4">Address</h5>
+                        <h5 class="font-weight-bold layout-foottext text-uppercase mt-3 mb-4">Contact Us</h5>
                         <p class="layout-foottext">Seva Bharathi, Vijayawada Madhava Sadan<br>D.NO:29-13-4/1, Kaleswara Rao Road, Governorpeta, Vijayawada-520002<br>
                             Phone No: 8919684642, 9440518837
                         <a href="#!" class="layout-footerlink" style="text-decoration: none;">sevabharativja@gmail.com</a>
