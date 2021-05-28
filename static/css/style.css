@@ -238,3 +238,8 @@ ul.dropdown-menu.show {
 .dropdown:hover .dropbtn {background-color:#3e4551;
 color: white;}
 /***Footer Ends***/
+/***About Starts***/
+.nameplate-image:hover{
+	opacity: 0.5;
+}
+/***About Ends***/
