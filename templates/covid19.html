@@ -5,26 +5,38 @@
 <style>
     .covid19-card{
         width: 100%;
+        border-radius: 3px;
         padding-top: 31%;
         background-size: cover;
     }
+    .covid-text{
+        padding-top: 10px;
+        margin-left: 30px;
+    }
 </style>
 <div class="container-fluid">
-<div class="row">
-    <div class="col col-lg-6 col-md-12" style="padding:0">
-        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N1.jpg')}});"></div></div>
-        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N2.jpg')}});"></div></div>
-        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N3.jpg')}});"></div></div>
-        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N4.jpg')}});"></div></div>
-        <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/N5.jpg')}});"></div></div>
-    </div>
-    <div class="col col-lg-6 col-md-12" style="padding:0 0">
-        <p style="margin-left:1%; margin-top:1%">
-            About Covid-19 here
-        </p>
+    <div class="row">
+        <div class="col col-lg-6 col-md-12" style="padding:0 0">
+            <p style="margin-left:1%; margin-top:1%">
+            <h3 style="text-align:center;">COVID-19 Service</h3>
+            <p class="covid-text">Seva Bharati teams plunged into several facets of service, namely</p>
+	        <p class="covid-text">Immunity booster oriented COVID -19 prevention activity in the form of distribution of Elixir (Kashayam) , Medicines</p>
+            <h3 style="text-align: center; padding-top: 15px;">Medical service in the form of</h3>
+	        <p class="covid-text">50 bed Isolation centre</p> 
+            <p class="covid-text">Free Helpline service with a response rate of 200 Beneficiaries per day </p>
+            <p class="covid-text"> Ambulance support</p> 
+            <p class="covid-text">Free distribution of Ayush 60 Medicine for Covid positive patients</p>
+            <p class="covid-text">Free food distribution to the paramedical staff, attendants of patients and sanitary staff about 200 per day at the Govt.</p>
+            <p class="covid-text">General Hospital, Vijayawada,  in addition to food supply to patients in home quarantine in addition to serving sugarcane juice to doctors.</p>
+             </p>
+        </div>
+        <div class="col col-lg-6 col-md-12" style="padding:0">
+            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns1.jpg')}});"></div></div> 
+            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns2.jpg')}});"></div></div>
+            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns4.jpg')}});"></div></div>
+            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns5.jpg')}});"></div></div>
+       </div>
     </div>
 </div>
-</div>
-
 
 {% endblock %}
