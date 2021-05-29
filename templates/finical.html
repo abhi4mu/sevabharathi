@@ -1,65 +1,75 @@
-{% extends 'layout.html' %}
 
-{% block body %}
+		{% extends 'layout.html' %}
 
-<style>
-    div{
-        width:100%;
-        padding:2%;
-    }
-    body{
-        padding:2%;
-        background-color:#fdfaf6;
-    }
-</style>
-<center>
-    <div class="row">
-        <div class="col">
-          <div>
-              <a href={{url_for('static',filename='/images/financial/1.webp')}} download>
-             <img src={{url_for('static',filename='/images/financial/1.webp')}} alt="W3Schools" width="800px" height="1000px">
-            </a>
+    {% block body %}
+    
+    <style>
+        .financial-image{
+            width:100%;
+            padding-bottom: 0%;      
+            
+        }
+        @media screen and (max-width:425px) {
+          .financial-image{
+              width: 150%;
+              height: 100%;
+              padding-bottom: 10%;
+          }
+        }
+        @media screen and (min-width:426px) {
+          .financial-image{
+              padding-bottom: 10%;
+          }
+        }
+    </style>
+    <center class="container-fluid">
+        <div  class="row">
+              <div class="container-fluid financial-image" style="padding-top: 5%;">
+                  <a href="{{url_for('static',filename='images/financial/1.webp')}}" download>
+                 <img src="{{url_for('static',filename='images/financial/1.webp')}}"  width="70%" height="100%" >
+                </a>
+              </div>
           </div>
-        </div>
-           <div class="col">
-          <div>
-              <a href={{url_for('static',filename='/images/financial/2.webp')}} download>
-             <img src={{url_for('static',filename='/images/financial/2.webp')}}  width="900px" height="200px">
-            </a>
+          <div  class="row">
+                <div class="financial-image">
+                  <a href="{{url_for('static',filename='images/financial/2.webp')}}" download>
+                  <img src="{{url_for('static',filename='images/financial/2.webp')}}"  width="90%" height="100%">
+                  </a>
+                </div>
           </div>
-        </div>
-        <div class="col">
-          <div>
-              <a href={{url_for('static',filename='/images/financial/3.webp')}} download>
-             <img src={{url_for('static',filename='/images/financial/3.webp')}}  width="800px" height="400px">
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div>
-              <a href={{url_for('static',filename='/images/financial/4.webp')}} download>
-             <img src={{url_for('static',filename='/images/financial/4.webp')}} width="800px" height="1000px">
-            </a>
-          </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-              <div>
-                  <a title="sevabharathi-income-tax-returns-acknolwdegement" href={{url_for('static',filename='/images/financial/5.pdf')}} download>
-                 <img src={{url_for('static',filename='/images/financial/pdf.webp')}} width="400px" height="400px">
-                 <h4>sevabharathi-income-tax-returns-acknolwdegement</h4>
+            <div class="row">
+              <div class="financial-image">
+                  <a href="{{url_for('static',filename='images/financial/3.webp')}}" download>
+                 <img src="{{url_for('static',filename='images/financial/3.webp')}}" width="70%" height="90%">
+                </a>
+              </div>
+            </div>
+          <div class="row">
+              <div class="financial-image">
+                  <a href="{{url_for('static',filename='images/financial/4.webp')}}" download>
+                 <img src="{{url_for('static',filename='images/financial/4.webp')}}" width="70%" height="100%">
                 </a>
               </div>
         </div>
-        <div class="col">
-              <div>
-                  <a title="trust-needs-image" href={{url_for('static',filename='/images/financial/6.pdf')}} download>
-                 <img src={{url_for('static',filename='/images/financial/pdf.webp')}} width="400px" height="400px">
-                 <h4>trust-needs-image</h4>
-                </a>
+        <div class="row">
+            
+              <div class="financial-image">
+                  <a title="sevabharathi-income-tax-returns-acknolwdegement" href="{{url_for('static',filename='images/financial/5.webp')}}" target="_blank" download>
+                  <img src="{{url_for('static',filename='images/financial/pdf.webp')}}" width="20%" height="100%">
+                  <h4>sevabharathi-income-tax-returns-acknolwdegement</h4>
+                  </a>
               </div>
         </div>
-    </div>
-</center>
-{% endblock %}
+        <div class="row">
+              <div class="financial-image">
+                  <a title="trust-needs-image" href="{{url_for('static',filename='images/financial/6.webp')}}" target="_blank" download>
+                  <img src="{{url_for('static',filename='images/financial/pdf.webp')}}" width="20%" height="100%">
+                  <h4>trust-needs-image</h4>
+                  </a>
+              </div>
+        </div>
+    
+    </center>
+    {% endblock %}
+    
+    
