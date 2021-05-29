@@ -1,5 +1,78 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-Health page here
+<style>
+    .totalhealth {
+      box-sizing: border-box;
+    }
+    
+ 
+    .health-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    
+    .health-column {
+      flex: 25%;
+      padding: 20px;
+      text-align: center;
+    }
+    .matter{
+        font-size: 22px;
+        
+    }
+    .matter-center{
+        margin:3%
+    }
+    @media screen and (max-width: 992px) {
+      .health-column {
+        flex: 50%;
+      }
+    }
+    
+    
+    @media screen and (max-width: 600px) {
+      .health-row {
+        flex-direction: column;
+        
+      }
+      .image{
+          width:100%;
+      }
+    }
+    </style>
+ 
+   
+    
+    <div style="background-color: #f9dfdc;" class="totalhealth">
+    <div class="row health-row" >
+      <div class="column health-column matter-center">
+        
+        <p class="matter">The Seva Bharati organizational report states that it has over five thousand health care centers spread</p>
+        <p class="matter">across India, including 4200 rural health care centers, 960 mobile clinics, 480 resident clinics in urban areas, 200 counseling centers,, 6500 ambulances and 7 leprosy medication and rehabilitation centers. It has a chain of 450 Blood banks</p>
+        <p class="matter">and over three hundred blood donation indexes that serve in times of emergencies</p>
+      </div>
+      
+      <div class="column health-column" class="health-column">
+        
+        <img class="image" src="{{url_for('static',filename='images/health/health1.webp')}}">
+      </div>
+      </div>
+    <div class="row health-row" >
+      <div class="column health-column">
+        
+        <img class="image" src="{{url_for('static',filename='images/health/health2.webp')}}">
+      </div>
+      
+      <div class="column health-column matter-center">
+        
+        <p class="matter">Seva Bharati also conducts AIDS awareness programmes targeting lorry drivers, taxi drivers,</p>
+        <p class="matter">dhaba owners and the youth where hundreds of participants participate and discuss topics including </p>
+        <p class="matter">"General health and hygiene", "STD symptoms and mode of transmission", "HIV-AIDS symptoms</p>
+        <p class="matter">and mode of transmission" and "Safe sex".</p>
+      </div>
+    </div>
+</div>
+
 {% endblock %}
