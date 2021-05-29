@@ -2,12 +2,92 @@
 
 {% block body %}
 
-<p>EDUCATION:</p> 
-<p>ABHYASIKAS:</p>
-	<p>Knowledge dissemination along with awareness of rich Culture, Tradition and Heritage of Bharat complemented by training the students in a disciplined manner had been taking place in 15 Tuition centers prior to the pandemic . 
-	These students are trained in such a manner  that they are on par with any other students trained at corporate or such other  institutions 
-	…….. children were benefitted  and when situation improves, the activity will be resumed. </p>
-<p>SEVA DARSAN:</p>
-<p>In order to make the urban educated youth to understand the stark realities related to eating habits, habitats and challenges of Tribal life in a practical manner, …. are deputed to ……. At</p>
 
+	<style>
+    	.totaleducation {
+      		box-sizing: border-box;
+   		 }
+    .education-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .education-column {
+      flex: 25%;
+      padding: 20px;
+      text-align: center;
+    }
+    .matter{
+        font-size: 22px;
+        
+    }
+	.education-image{
+		width: 100%;
+	}
+    .matter-center{
+        margin:3%
+    }
+    @media screen and (max-width: 992px) {
+      .education-column {
+        flex: 50%;
+      }
+	  
+    }
+    @media screen and (max-width: 600px) {
+      .education-row {
+        flex-direction: column;
+      }
+      .education-image{
+          width:100%;
+      }
+    }
+    </style>
+<div style="background-color: #caf7e3;" class="totaleducation">
+    <div class="row education-row">
+        	<div class="col education-column">
+			
+				<h4 style="text-align:center; padding-top: 2%;">ABHYASIKAS:</h4>
+				<p class="education-matter"> Knowledge dissemination along with awareness of rich Culture,  </p>
+				<p class="education-matter">Tradition and Heritage of Bharat complemented by training the students in a disciplined manner had been taking place in 15 Tuition centers prior to the pandemic .</p>
+				<p class="education-matter">These students are trained in such a manner  that they are on par with any other students trained at corporate or such other  institutions </p>
+				<p class="education-matter">…….. children were benefitted  and when situation improves, the activity will be resumed. </p>
+			</div>	
+			<div class="col education-column">
+	        	<img class="education-image" src="{{url_for('static', filename='/images/education/education.webp')}} ">  
+			</div> 
+    </div>
+	<div class="row education-row">	
+        	<div class="col education-column">
+            	<img class="education-image" src="{{url_for('static', filename='/images/education/education2.webp')}}">
+			</div>
+			<div class="col education-column">
+					<h3 style="text-align: center;">DHANVANTARI CLINIC :</h3>
+            		<p class="education-matter">  The famous pediatrician and also SEVABHARATI</p>
+					<p class="education-matter">  president Dr. Y. Sai kishore garu, past 20 years onwards is</p>
+					<p class="education-matter">renderings his serivce in this clinic presently in seva basti</p>
+					<p class="education-matter">of Gunadala Katta every Friday from 8.00 am to 9.30 am</p>
+					<p class="education-matter">Free Medical Checkup for Children and adults. They are</p>
+					<p class="education-matter">providing free medicines also.</p>
+			</div>
+    </div>
+	<div class="row education-row">
+		<div class="col education-column">
+				<h4 style="text-align:center;">BLOOD DONORS DIRECTORY :</h4>
+				<p class="education-matter"> " Donate Blood - Save Life " Seva Bharati Blood Bank directory have been organised</p>
+				<p class="education-matter"> and rendering service to theneedy. They Encourage the people to join and donate blood.
+					Blood Grouping is done in the camp</p> 
+		</div>  
+		<div class="col education-column">
+			
+			<h4 style="text-align:center;">NARAYANA PATRA :</h4>
+			<p class="education-matter">  Organisers have, visited Urmila Nagar and Motivated
+					the families to Narayana Pathra.
+					Every day they have to keep aside in a bag a fist of
+			</p>
+			<p class="education-matter"> Rice before cooking. One day in a month volunteers collect
+					the Rice. They all enthusiastically came forward and handed
+					over the rice to Sri A.B. Rama Rao Garu rice and dal were
+			</p> 
+		</div>
+	</div>
+</div>
 {% endblock %}
