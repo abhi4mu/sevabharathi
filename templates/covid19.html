@@ -23,7 +23,7 @@
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
     .services-header{
         text-align: center;
@@ -33,6 +33,13 @@
   margin-bottom: 30px;
   border-radius: 2px;
   overflow: hidden; }
+  .service img{
+      height: 100%;
+      width: 100%;
+      border: 1px solid transparent;
+      border-color:black;
+      border-radius: 3%;
+  }
   .service img {
     -webkit-transition: .3s ease;
                 transition: .3s ease; }
@@ -43,7 +50,7 @@
 
     
 </style>
-<div class="container-fluid">
+<div class="container-fluid" style="background-color:paleturquoise">
     <div class="row">
         <div class="col-lg-8 col-md-12" style="padding:0 0">
             <p style="margin-left:1%; margin-top:1%">
@@ -69,85 +76,85 @@
             </div>
         </div>
     </div>
-    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-1.0 Services</h3>
+    <h3 class="covid-header">Lock Down-1.0 Services</h3>
     <div class="row">
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height: 100%;width: 100%" src={{url_for('static', filename='images/covid19/ld1/ld1-1.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld1/ld1-1.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height: 100%;width: 100%" src={{url_for('static', filename='images/covid19/ld1/ld1-2.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld1/ld1-2.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld1/ld1-3.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld1/ld1-3.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld1/ld1-4.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld1/ld1-4.webp')}} alt="service-ld1">
             </div>
         </div>
     </div>
-    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-2.0 Services</h3>
+    <h3 class="covid-header">Lock Down-2.0 Services</h3>
     <div class="row">
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld2/ld2-1.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld2/ld2-1.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld2/ld2-2.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld2/ld2-2.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld2/ld2-3.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld2/ld2-3.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld2/ld2-4.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld2/ld2-4.webp')}} alt="service-ld1">
             </div>
         </div>
     </div>
-    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-3.0 Services</h3>
+    <h3 class="covid-header">Lock Down-3.0 Services</h3>
     <div class="row">
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld3/ld3-1.webp')}} alt="service-ld1">
+                <img src={{url_for('static', filename='images/covid19/ld3/ld3-1.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld3/ld3-2.webp')}} alt="service-ld1">
+                <img src={{url_for('static', filename='images/covid19/ld3/ld3-2.webp')}} alt="service-ld1">
             </div>
         </div>
     </div>
-    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-4.0 Services</h3>
+    <h3 class="covid-header">Lock Down-4.0 Services</h3>
     <div class="row">
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld4/ld4-1.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld4/ld4-1.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld4/ld4-2.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld4/ld4-2.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld4/ld4-3.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld4/ld4-3.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height:100%; width:100%;" src={{url_for('static', filename='images/covid19/ld4/ld4-4.webp')}} alt="service-ld1">
+                <img  src={{url_for('static', filename='images/covid19/ld4/ld4-4.webp')}} alt="service-ld1">
             </div>
         </div>
     </div>
