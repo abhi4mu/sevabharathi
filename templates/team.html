@@ -6,24 +6,25 @@
     <div class="nameplate-template">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <a class="nameplate-image"><img src="../static/images/skip/img1.webp" alt="" height="300" width="470"></a>
-                    <a class="nameplate-image"><img src="../static/images/skip/img2.webp" alt="" height="300" width="470"></a>
-                    <a class="nameplate-image"><img src="../static/images/skip/img3.webp" alt="" height="300" width="470"></a>
-                    <a class="nameplate-image"><img src="../static/images/skip/img4.webp" alt="" height="300" width="470"></a>
-                    <a class="nameplate-image"><img src="../static/images/skip/img5.webp" alt="" height="300" width="470"></a>
-                    <a class="nameplate-image"><img src="../static/images/skip/img6.webp" alt="" height="300" width="470"></a>
-                </div>
+                    <a class="col-4" style="padding:0%" href="#vission_mission"><div class="nameplate-image" style="background-image: url({{url_for('static', filename='/images/skip/img1.webp')}});"></div></a>
+                    <a class="col-4" style="padding:0%" href="#who_we_are"><div class="nameplate-image" style="background-image: url({{url_for('static', filename='/images/skip/img2.webp')}});"></div></a>
+                    <a class="col-4" style="padding:0%" href="#our_approach"><div class="nameplate-image" style="background-image: url({{url_for('static', filename='/images/skip/img3.webp')}});"></div></a>
+                    <a class="col-4" style="padding:0%" href="#our_proud_partners"><div class="nameplate-image" style="background-image: url({{url_for('static', filename='/images/skip/img4.webp')}});"></div></a>
+                    <a class="col-4" style="padding:0%" href="#team_template"><div class="nameplate-image" style="background-image: url({{url_for('static', filename='/images/skip/img5.webp')}});"></div></a>
+                    <a class="col-4" style="padding:0%" href="#financials"><div class="nameplate-image" style="background-image: url({{url_for('static', filename='/images/skip/img6.webp')}});"></div></a>
             </div>
         </div>
     </div>
 
-
-
-
-
-
-
+    <div id="vission_mission"></div>
+    
+    <div id="who_we_are"></div>
+    
+    <div id="our_approach"></div>
+    
+    <div id="our_proud_partners">
+        
+    </div>
 
     <div id="team_template" class="team-template">
         <h1 class="team-title">Team Members</h1>
@@ -174,6 +175,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="financials">
+        
     </div>
 </div>
 
