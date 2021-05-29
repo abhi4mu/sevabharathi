@@ -45,7 +45,7 @@
 </style>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-6 col-md-12" style="padding:0 0">
+        <div class="col-lg-8 col-md-12" style="padding:0 0">
             <p style="margin-left:1%; margin-top:1%">
             <h3 class="covid-header">COVID-19 Service</h3>
             <p class="covid-text">Seva Bharati teams plunged into several facets of service, namely
@@ -62,10 +62,10 @@
             </ul>
             </p>
         </div>
-        <div class="col-lg-6 col-md-12" style="padding:0"> 
-            <div class="covid19-card">
-                <img src="../static/images/covid19/ns2.webp" style="height:550px; width:650px; padding-top: 25px;padding-left: 15px;
-                        padding-right: 15px;padding-bottom: 20px;border-radius: 12%;" class="img-fluid" alt="Responsive image"><br>
+        <div class="col-lg-4 col-md-12" style="padding:0"> 
+            <div class="covid19-card" style="padding-top: 1em;">
+                <div style="width: 100%; padding-top: 70%; background-position-x: center;background-repeat: no-repeat; background-size: contain;
+                background-image: url({{url_for('static', filename='images/covid19/ns2.webp')}});" ></div>
             </div>
         </div>
     </div>
@@ -73,7 +73,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-3">
             <div class="service">
-                <img style="height: 100%;width: 100%" src="../static/images/covid19/ld1/ld1-1.webp" alt="service-ld1">
+                <img style="height: 100%;width: 100%" src={{url_for('static', filename='images/covid19/ld1/ld1-1.webp')}} alt="service-ld1">
             </div>
         </div>
         <div class="col-sm-6 col-md-3">
