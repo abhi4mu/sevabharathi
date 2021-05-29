@@ -3,39 +3,153 @@
 {% block body %}
 
 <style>
-    .covid19-card{
+    .covid19{
         width: 100%;
-        border-radius: 3px;
-        padding-top: 31%;
-        background-size: cover;
+        height:10%;
+        border-radius:2%;
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        
     }
     .covid-text{
         padding-top: 10px;
         margin-left: 30px;
+        font-size: larger;
+        font-family: inherit;
     }
+    .covid-header{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .services-header{
+        text-align: center;
+    }
+
+    .service {
+  margin-bottom: 30px;
+  border-radius: 2px;
+  overflow: hidden; }
+  .service img {
+    -webkit-transition: .3s ease;
+                transition: .3s ease; }
+    .service:hover img {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+
+    
 </style>
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-md-12" style="padding:0 0">
             <p style="margin-left:1%; margin-top:1%">
-            <h3 style="text-align:center;">COVID-19 Service</h3>
-            <p class="covid-text">Seva Bharati teams plunged into several facets of service, namely</p>
-	        <p class="covid-text">Immunity booster oriented COVID -19 prevention activity in the form of distribution of Elixir (Kashayam) , Medicines</p>
-            <h3 style="text-align: center; padding-top: 15px;">Medical service in the form of</h3>
-	        <p class="covid-text">50 bed Isolation centre</p> 
-            <p class="covid-text">Free Helpline service with a response rate of 200 Beneficiaries per day </p>
-            <p class="covid-text"> Ambulance support</p> 
-            <p class="covid-text">Free distribution of Ayush 60 Medicine for Covid positive patients</p>
-            <p class="covid-text">Free food distribution to the paramedical staff, attendants of patients and sanitary staff about 200 per day at the Govt.</p>
-            <p class="covid-text">General Hospital, Vijayawada,  in addition to food supply to patients in home quarantine in addition to serving sugarcane juice to doctors.</p>
-             </p>
+            <h3 class="covid-header">COVID-19 Service</h3>
+            <p class="covid-text">Seva Bharati teams plunged into several facets of service, namely
+	        Immunity booster oriented COVID -19 prevention activity in the form of distribution of Elixir (Kashayam) ,
+             Medicines</p>
+            <h3 class="covid-header">Medical service in the form of</h3>
+            <ul class="covid-text">
+                <li>50 bed Isolation centre</li>
+                <li>Free Helpline service with a response rate of 200 Beneficiaries per day</li>
+                <li>Ambulance support</li> 
+                <li>Free distribution of Ayush 60 Medicine for Covid positive patients</li>
+                <li>Free food distribution to the paramedical staff, attendants of patients and sanitary staff about 200 per day at the Govt.</li>
+                <li>General Hospital, Vijayawada,  in addition to food supply to patients in home quarantine in addition to serving sugarcane juice to doctors.</li>
+            </ul>
+            </p>
         </div>
-        <div class="col-lg-6 col-md-12" style="padding:0">
-            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns1.webp')}});"></div></div> 
-            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns2.webp')}});width:100%;padding-top: 125%;"></div></div>
-            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns4.webp')}});"></div></div>
-            <div><div  class="covid19-card" style="background-image: url({{url_for('static', filename='/images/covid19/ns5.webp')}});"></div></div>
-       </div>
+        <div class="col-lg-6 col-md-12" style="padding:0"> 
+            <div class="covid19-card">
+                <img src="../static/images/covid19/ns2.webp" style="height:550px; width:650px; padding-top: 25px;padding-left: 15px;
+                        padding-right: 15px;padding-bottom: 20px;border-radius: 12%;" class="img-fluid" alt="Responsive image"><br>
+            </div>
+        </div>
+    </div>
+    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-1.0 Services</h3>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld1/ld1-1.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld1/ld1-2.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width:280px" src="../static/images/covid19/ld1/ld1-3.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width:280px" src="../static/images/covid19/ld1/ld1-4.webp" alt="service-ld1">
+            </div>
+        </div>
+    </div>
+    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-2.0 Services</h3>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld2/ld2-1.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld2/ld2-2.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width:280px" src="../static/images/covid19/ld2/ld2-3.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width:280px" src="../static/images/covid19/ld2/ld2-4.webp" alt="service-ld1">
+            </div>
+        </div>
+    </div>
+    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-3.0 Services</h3>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld3/ld3-1.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld3/ld3-2.webp" alt="service-ld1">
+            </div>
+        </div>
+    </div>
+    <h3 style="text-align: center;padding-top: 20px;padding-bottom: 30px;">Lock Down-4.0 Services</h3>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld4/ld4-1.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width: 280px" src="../static/images/covid19/ld4/ld4-2.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width:280px" src="../static/images/covid19/ld4/ld4-3.webp" alt="service-ld1">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="service">
+                <img style="height: 300px;width:280px" src="../static/images/covid19/ld4/ld4-4.webp" alt="service-ld1">
+            </div>
+        </div>
     </div>
 </div>
 
