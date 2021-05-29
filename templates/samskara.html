@@ -1,5 +1,47 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-About Samskara Kendra Here
+<style>
+    .samskara-header{
+        text-align: left;
+        padding-top: 3%;
+        margin-left: 2%;
+    }
+    .samskara-content{
+        padding-top: 2%;
+        padding-left: 3%;
+        padding-bottom: 1%;
+        width: 50%;
+        font-size:1em;
+    }
+    .samskara-img{
+        height: 80%;
+        width: 80%;
+    }
+
+</style>
+
+<body>
+    <h3 class="samskara-header">BALA SAMSKARA KENDRAS :</h3>
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <p class="samskara-content"> A days tv channels has mesmerised the children
+            and corrupted their minds not knowing the culture and
+            traditions of our country.
+            Corporate schools have tamed the students with a
+            routine terrestrial style of giving education. students are not
+            given a chance to know,understand and participate in service
+            activities.
+            Our Sevabharati has started many Bala samaskara
+            kendras for children. They teach students -yoga,patriotic
+            song,games and discipline for the better development of
+            the student(his/her) mental and physical strength through
+            our culture.</p>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <img class="samskara-img" src={{url_for('static', filename='images/covid19/ld1/ld1-33.webp')}} alt="service-ld1">
+        </div>
+    </div>
+</body>
+
 {% endblock %}
