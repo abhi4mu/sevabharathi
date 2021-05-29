@@ -10,6 +10,10 @@ def covid19():
 def education():
     return render_template('education.html')
 
+@app.route('/fi')
+def fi():
+    return render_template('finical.html')
+
 @app.route('/health')
 def health():
     return render_template('health.html')
