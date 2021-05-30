@@ -167,6 +167,7 @@ color: white;}
 }
 /*====================================================Home Ends================================================================*/
 /*====================================================About Starts=============================================================*/
+.about-template{}
 .nameplate-image{
 	width: 100%;
 	padding-top: 65%;
@@ -181,10 +182,30 @@ color: white;}
 .team-template{
 	padding-top: 10px;
 	padding-bottom: 10px;
-  
-  background-color: #7cffcb;
-  background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
-
+  	background-color: #7cffcb;
+  	background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}
+.proud-template{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: aqua;
+}
+.approach-template{
+	padding-top: 10px;
+	padding-bottom: 10px;
+  	background-color: #7cffcb;
+  	background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}
+.who-template{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: aqua;
+}
+.vission-template{
+	padding-top: 10px;
+	padding-bottom: 10px;
+  	background-color: #7cffcb;
+  	background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
 }
 .about-title{
 	text-align: center;
@@ -196,6 +217,11 @@ color: white;}
 	color: #fff;
   font-family: 'Open Sans Condensed', sans-serif;
 	text-shadow: 0 1px 10px rgb(0 0 0 / 60%);
+}
+.about-text{
+	text-align: center;
+	font-size: 150%;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .flip-card {
 	background-color: transparent;
@@ -249,11 +275,12 @@ color: white;}
 .live-col{
 	padding: 1%;
 	height: 400px;
-}
-.live-image{
-	width: 300%;
-	height: 100%;
+	width: 90%;
+	background-size: cover;
 	background-repeat: no-repeat;
+}
+.image{
+	padding-top: 20%;
 }
 .live-text{
 	align-content: center;
