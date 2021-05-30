@@ -1,71 +1,16 @@
-/***Navbar Starts***/
+/*====================================================Layout Starts============================================================*/
 .navbar-dark .navbar-nav .nav-link {
-  color: black;
+	color: black;
 }
 ul.dropdown-menu.show {
-  background-color: blanchedalmond;
+	background-color: blanchedalmond;
 }
-/***Navbar Ends***/
-/***Home starst***/
-.home-image{
-	background-repeat:no-repeat;
-	background-size:cover;
-	width:98%;
-	height:250px;
-	border-radius:6px;
-}
-
-.home-col{
-  min-width: 200px;
-  width: 30%; 
-  margin-left: 1%; 
-  /* margin-right: 1%; */
-}
-
-.home-inner-div
-{
-	text-align:center;
-	width:15%;
-	padding-top:1%;
-	padding-bottom:1%;
-	margin-left:40%;
-	margin-right:40%;
-	border-radius:5px;
-}
-.home-top
-{
-	width:98%;
-	padding-top:1%;
-	padding-bottom:1%;
-	margin-left:1%;
-	margin-right:1%;
-	margin-top:1%;
-	margin-bottom:1%;
-	border-radius: 10px;
-	background-color: #e2c88d;
-}
-.home-heading{
-	text-align:left;
-	color:white;
-	margin-left:1%;
-	font-family:verdana;
-}
-
-.home-carousel-item{
-  background-color: #e2c88d;
-  width: 100%;
-  padding-bottom: 31.5%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .layout-nav-link{
-  color: red;
+	color: red;
 }
 .layout-nav-link:hover{
-  color: white;
+	color: white;
 }
-/***Footer Starts***/
 .layout-foottext{
 	color: white;
 }
@@ -171,8 +116,57 @@ ul.dropdown-menu.show {
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color:#3e4551;
 color: white;}
-/***Footer Ends***/
-/***About Starts***/
+/*====================================================Layout Ends==============================================================*/
+/*====================================================Home Starts==============================================================*/
+.home-image{
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:98%;
+	height:250px;
+	border-radius:6px;
+}
+.home-col{
+  min-width: 200px;
+  width: 30%; 
+  margin-left: 1%;
+}
+.home-inner-div
+{
+	text-align:center;
+	width:15%;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-left:40%;
+	margin-right:40%;
+	border-radius:5px;
+}
+.home-top
+{
+	width:98%;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-top:1%;
+	margin-bottom:1%;
+	border-radius: 10px;
+	background-color: #e2c88d;
+}
+.home-heading{
+	text-align:left;
+	color:white;
+	margin-left:1%;
+	font-family:verdana;
+}
+.home-carousel-item{
+  background-color: #e2c88d;
+  width: 100%;
+  padding-bottom: 31.5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*====================================================Home Ends================================================================*/
+/*====================================================About Starts=============================================================*/
 .nameplate-image{
 	width: 100%;
 	padding-top: 65%;
@@ -245,4 +239,28 @@ color: white;}
 .team-cols{
   margin-top: 2em;
 }
-/***About Ends***/
+/*====================================================About Ends===============================================================*/
+/*====================================================Livelyhood Starts========================================================*/
+.live-template{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background-color: turquoise;
+}
+.live-col{
+	padding: 1%;
+	height: 400px;
+}
+.live-image{
+	width: 300%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+.live-text{
+	align-content: center;
+}
+.live-title{
+	text-align: center;
+}
+/*====================================================Livelyhood Ends==========================================================*/
+/*====================================================CSSANIM Starts===========================================================*/
+/*====================================================CSSANIM Ends=============================================================*/
