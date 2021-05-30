@@ -167,7 +167,7 @@ color: white;}
 }
 /*====================================================Home Ends================================================================*/
 /*====================================================About Starts=============================================================*/
-.about-template{}
+
 .nameplate-image{
 	width: 100%;
 	padding-top: 65%;
@@ -178,6 +178,11 @@ color: white;}
 }
 .nameplate-image:hover{
 	opacity: 0.5;
+}
+.nameplate-template{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: aqua;
 }
 .team-template{
 	padding-top: 10px;
@@ -265,6 +270,7 @@ color: white;}
 .team-cols{
   margin-top: 2em;
 }
+
 /*====================================================About Ends===============================================================*/
 /*====================================================Livelyhood Starts========================================================*/
 .live-template{
